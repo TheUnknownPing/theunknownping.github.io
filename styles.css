@@ -21,11 +21,11 @@ body::-webkit-scrollbar{
 }
 
 body::-webkit-scrollbar-track{
-      background: #1e1e24;
+      background: #202027;
 }
 
 body::-webkit-scrollbar-thumb{
-      background: rgb(171, 21, 21);
+      background: rgb(19, 20, 20);
 }
 
 main {
@@ -36,7 +36,7 @@ main {
         "footer  footer  footer";
 
         grid-template-columns: 1fr 5fr 1fr;
-        grid-template-rows: auto auto 400px;
+        grid-template-rows: auto auto auto;
 
         gap: 0 50px;
 
@@ -45,24 +45,6 @@ main {
 
 a {
     color: whitesmoke;
-}
-
-.navigationTopbar{
-    text-align: right;
-    padding-left: 1rem;
-}
-
-.navigationTopbar a{
-    background: local;
-    color: whitesmoke;
-    margin-right: 1rem;
-
-    font-size: 28px;
-}
-
-.navigationTopbar .title{
-    text-align: left;
-    float: left;
 }
 
 .landingPage {
@@ -83,11 +65,10 @@ a {
     align-items: center;
 }
 
-.landingPage .websiteText a{
+.landingPage .websiteTitle a{
     font-size: 5vw;
     background-color: rgba(0, 0, 0, 0.2);
     padding: 1vw;
-    
 }
 
 .title{
@@ -132,14 +113,6 @@ a {
     font-weight: 500;
  }
 
- .card a:hover{
-    outline: rgb(171, 21, 21) outset 5px;
-    color: rgb(255, 218, 56);
-
-    transition: color 0.2s ease-in;
-    transition: outline 0.1s ease-in;
- }
-
  .card h2,h5{
     background-color: rgb(55, 55, 55);
     background-size: auto;
@@ -178,52 +151,20 @@ a {
     margin: 20px;
  }
 
-.inner_footer{
-    display: block;
-    margin: 0 auto;
-    width: 1800px;
-    height: 100%;
+.footerMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.inner_footer .logo_container{
-    width: 0;
-    float: left;
-    height: 100%;
-    display: block;
+.footerMenu a{
+    color: rgb(82, 82, 82);
+    padding: 1vw;
+    margin: 2vw;
 }
 
-.inner_footer .logo_container img{
-    width: 180px;
-    height: auto;
-}
-
-.inner_footer .footer_third{
-    width: calc(21.6666667% - 20px);
-    margin-right: 5px;
-    float: left;
-    height: 50%;
-}
-
-.inner_footer .footer_third:last-child{
-    margin-right: 0;
-}
-
-.inner_footer .footer_third h1{
-    font-size: 22px;
-    display: block;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.inner_footer .footer_third a{
-    font-size: 22px;
-    color: whitesmoke;
-    display: block;
-    font-weight: 200;
-    width: 100%;
-    padding-bottom: 5px;
-}
-
+ /* */
 header  {
     grid-area: topbar; 
     color: whitesmoke; 
@@ -234,7 +175,6 @@ article {
     padding: 2.5rem;
     margin-left: 1vw;
     margin-right: 1vw;
-    /*background-color: rgba(9, 18, 12, 0.4);*/
 }
 footer  {
     grid-area: footer;
