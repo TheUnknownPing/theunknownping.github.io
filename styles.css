@@ -71,8 +71,17 @@ a {
     padding: 1vw;
 }
 
+.link{
+    font-size: 4vh;
+    display:inline;
+    padding: 0.5vw;
+    margin: 1.5vw;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
 .title{
     font-size: 4vh;
+    margin-top: 2.5vw;
 }
 
 .homeText{
