@@ -52,7 +52,7 @@ a {
     background: url("files/images/forest-backdrop2784x1243.png");
   
     /* Full height */
-    height: 100vh; 
+    height: 100vh;
   
     /* Center and scale the image nicely */
     background-position: center;
@@ -91,74 +91,71 @@ a {
     padding: 2vw;
 }
 
-.row {
-    float: left;
+.row{
+    margin: 0 -5px;
 }
+
+.column{
+  padding: 0px;
+  display: block;
+  display: inline;
+}
+
+
 
 .card {
-    border: 0px solid black;
-    outline: rgb(171, 21, 21) outset 2px;
-    background-color: rgb(61, 61, 61);
-    padding: 20px;
-    margin-top: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
- }
-
- .card:first-child{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-left:  10%;
+    margin-right: 10%;
     margin-bottom: 30px;
+    text-align: center;
+    background-image: url("files/images/intrudermap_1920x810.png");
+    background-size:auto;
+    background-repeat: no-repeat;
 }
 
- .card:last-child{
-     margin-bottom: 50px;
- }
-
- .card a{ 
-    margin: 100px;
+@media screen and (max-width: 1000px) {
+    .card {
+      display: block;
+      margin-left:  0%;
+      margin-right: 0%;
+    }
+}
+.card .cardTitle{
+    text-align: center;
+    padding: 15%;
     font-size: 2rem;
-    border: 3px solid rgb(61, 61, 61);;
-    outline: rgb(171, 21, 21) outset 2px;
-    color: whitesmoke;
-    font-weight: 500;
- }
-
- .card h2,h5{
-    background-color: rgb(55, 55, 55);
-    background-size: auto;
- }
-
- .card img{
-    margin: 20px;
-    border-radius: 20px;
- }
-
-.navTitle{
-    margin-top: 20px;
-    margin-right: 50px;
+    font-size-adjust: inherit;
 }
 
- .cardNav{
-    border: 0px solid black;
-    outline: rgb(171, 21, 21) outset 2px;
-    background-color: rgb(55, 55, 55);
-    padding: 20px;
-    margin-top: 20px;
-    margin-right: 50px;
-    color: white;
- }
 
- .cardNav h2,h5{
-    background-size: auto;
-    font-size: 1.1rem;
- }
+.card .cardText{
+    text-align: center;
+    text-size-adjust: 1rem;
+    padding: 1%;
+}
 
- .article{
+.card .readMoreButton{
+    padding: 0.5%;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.card .readMoreButton a{
+
+    padding: 0.5%;
+}
+.card :last-child{
+    margin-bottom: 0;
+}
+
+.article{
     margin: 20px;
- }
+}
 
- .article h1{
+.article h1{
     margin: 20px;
- }
+}
 
 .footerMenu{
     display: flex;
