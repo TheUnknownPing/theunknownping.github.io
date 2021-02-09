@@ -47,6 +47,8 @@ a {
     color: whitesmoke;
 }
 
+
+
 .landingPage {
     /* The image used */
     background: url("files/images/forest-backdrop2784x1243.png");
@@ -139,6 +141,15 @@ a {
       margin-left:  0%;
       margin-right: 0%;
     }
+    .articleText{
+        margin-left: 0%;
+        margin-right: 0%;
+        text-align: center;
+    }
+    .articleImgRight img{
+        float: left;
+        margin-left: 0;
+    }
 }
 .card .cardTitle{
     text-align: center;
@@ -169,11 +180,39 @@ a {
 }
 
 .article{
-    margin: 20px;
+    margin: 0px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.article h1{
-    margin: 20px;
+.articleTitle {
+    margin-top: 40px;
+}
+
+.articleTitle a{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.articleText{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+}
+
+.articleImgLeft img{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.articleImgRight img{
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 .footerMenu{
@@ -181,12 +220,21 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1vw;
+    margin: 2vw;
 }
 
 .footerMenu a{
     color: rgb(82, 82, 82);
-    padding: 1vw;
-    margin: 2vw;
+}
+
+.footerMenu a:link{
+    color: rgb(82, 82, 82);
+    text-decoration: underline;
+}
+
+.footerMenu a:hover{
+    text-decoration: none;
 }
 
  /* */
