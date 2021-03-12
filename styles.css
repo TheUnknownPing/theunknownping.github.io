@@ -3,13 +3,13 @@
     font-size: 16px;
     background-color: rgb(36, 37, 38);
     color: white;
-  }  
+}  
 
 *{
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
 html{
@@ -21,11 +21,11 @@ body::-webkit-scrollbar{
 }
 
 body::-webkit-scrollbar-track{
-      background: #202027;
+    background: #202027;
 }
 
 body::-webkit-scrollbar-thumb{
-      background: rgb(19, 20, 20);
+    background: rgb(19, 20, 20);
 }
 
 main {
@@ -52,10 +52,10 @@ a {
 .landingPage {
     /* The image used */
     background: url("files/images/forest-backdrop2784x1243.png");
-  
+
     /* Full height */
     height: 100vh;
-  
+
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -106,9 +106,9 @@ a {
 }
 
 .column{
-  padding: 0px;
-  display: block;
-  display: inline;
+    padding: 0px;
+    display: block;
+    display: inline;
 }
 
 .projectSectionTitle{
@@ -133,13 +133,29 @@ a {
     background-image: url("files/images/intrudermap_1920x810.png");
     background-size:auto;
     background-repeat: no-repeat;
+    animation: placingDiamonds ease .2s;
+}
+
+@keyframes placingDiamonds {
+    0% {margin-left: 5%; margin-right: 5% }
+    100% {margin-left: 10%; margin-right: 10% }
+}
+
+.card:hover{
+    animation: minerDiamonds ease .2s;
+    margin-left: 5%; margin-right: 5%
+}
+
+@keyframes minerDiamonds {
+    0% {margin-left: 10%; margin-right: 10% }
+    100% {margin-left: 5%; margin-right: 5% }
 }
 
 @media screen and (max-width: 1000px) {
     .card {
-      display: block;
-      margin-left:  0%;
-      margin-right: 0%;
+        display: block;
+        margin-left:  0%;
+        margin-right: 0%;
     }
     .articleText{
         margin-left: 0%;
